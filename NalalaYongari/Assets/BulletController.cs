@@ -6,7 +6,7 @@ public class BulletController : MonoBehaviour
 {
 
     Transform bullet;
-    float speed = 0.05f;
+    float speed = 0.18f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +19,9 @@ public class BulletController : MonoBehaviour
     void Update()
     {
         //GetComponent<Rigidbody>().isKinetic = false;
-        bullet.Translate(new Vector3(this.transform.position.x, 0.02f, 0) * speed * Time.deltaTime);
+        bullet.Translate(new Vector3(0, speed, 0));
 
-        if (transform.position.y < 15.0f)
+        if (transform.position.y > 15.0f)
         {
             Destroy(gameObject);
         }

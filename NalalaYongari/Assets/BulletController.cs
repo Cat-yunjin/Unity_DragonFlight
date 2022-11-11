@@ -6,7 +6,7 @@ public class BulletController : MonoBehaviour
 {
 
     Transform bullet;
-    float speed = 0.18f;
+    float speed = 0.23f;
     // Start is called before the first frame update
     void Start()
     {

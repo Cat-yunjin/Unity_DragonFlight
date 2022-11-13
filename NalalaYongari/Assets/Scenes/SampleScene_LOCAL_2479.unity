@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 398398340}
   - component: {fileID: 398398341}
   - component: {fileID: 398398342}
-  - component: {fileID: 398398343}
   m_Layer: 0
   m_Name: weDragon
   m_TagString: Untagged
@@ -307,18 +306,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d288c580ebf274468392955ea6cd38e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &398398343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398398335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9814c2a4b56fda249a6ff1a20433782b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &537448354
@@ -676,54 +663,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
---- !u!1 &1507985017
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1507985019}
-  - component: {fileID: 1507985020}
-  m_Layer: 0
-  m_Name: meteoGenerator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1507985019
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507985017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6250929, y: 11.197413, z: 3.1730063}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1507985020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507985017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb59276d3b96bd247a3998ca2c5c44c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meteoPrefab: {fileID: 2588990553603909195, guid: 1ff8cacd61094424abed792ae4605f07, type: 3}
->>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함)
 --- !u!1 &1558391133
 GameObject:
   m_ObjectHideFlags: 0

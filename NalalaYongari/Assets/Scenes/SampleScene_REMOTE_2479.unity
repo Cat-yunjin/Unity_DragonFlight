@@ -166,7 +166,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &398398335
 GameObject:
@@ -364,7 +364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3e18695a4f9e4e9ca1c28a9bcbcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
 --- !u!4 &537448357
 Transform:
   m_ObjectHideFlags: 0
@@ -504,7 +503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3e18695a4f9e4e9ca1c28a9bcbcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
 --- !u!114 &946710699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,7 +658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3e18695a4f9e4e9ca1c28a9bcbcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
 --- !u!4 &1493891397
 Transform:
   m_ObjectHideFlags: 0
@@ -676,8 +673,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1507985017
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +718,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteoPrefab: {fileID: 2588990553603909195, guid: 1ff8cacd61094424abed792ae4605f07, type: 3}
->>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함)
 --- !u!1 &1558391133
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +816,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!1 &1659067560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1659067562}
+  - component: {fileID: 1659067563}
+  m_Layer: 0
+  m_Name: warnlineGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1659067562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659067560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.30459523, y: 6.947681, z: 8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659067563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659067560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511a9cab084b361468d81b516c74859a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warnlinePrefab: {fileID: 8110637758879416096, guid: 156faf1337778994ea070413da450836, type: 3}
 --- !u!1 &1719656738
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,13 +899,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719656738}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0034798384, y: 11.989833, z: 8.257839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1719656742
 MonoBehaviour:
@@ -880,7 +919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3e18695a4f9e4e9ca1c28a9bcbcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
 --- !u!1 &2062224238
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3e18695a4f9e4e9ca1c28a9bcbcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
 --- !u!4 &2062224241
 Transform:
   m_ObjectHideFlags: 0

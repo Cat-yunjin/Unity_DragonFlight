@@ -11,7 +11,8 @@ public class BulletController : MonoBehaviour
     void Start()
     {
         bullet = transform;
-  
+
+        //GetComponent<Rigidbody>().isKinetic = true;       
     }
     
     // Update is called once per frame

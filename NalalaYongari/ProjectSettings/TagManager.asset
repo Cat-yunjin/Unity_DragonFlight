@@ -6,11 +6,7 @@ TagManager:
   tags:
   - enemy
   - project
-<<<<<<< HEAD
   - bullet
-=======
-  - meteo
->>>>>>> origin/yunjin
   layers:
   - Default
   - TransparentFX

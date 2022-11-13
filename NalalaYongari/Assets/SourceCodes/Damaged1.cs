@@ -15,29 +15,12 @@ public class Damaged1: MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collider collision) // 충돌하는 순간 작동
-    {
-        if (collision.gameObject.tag == "enemy" || collision.gameObject.tag == "meteo")
-        {
-            Destroy(gameObject);
-        }
-    }
-    private void OnTriggerExit(Collider collision) // 충돌이 끝난 순간 작동
-    {
 
-    }
-    private void OnTriggerStay(Collider collision) // 충돌하는 순간 작동
-    {
-
-    }
-
-    /*
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "enemy" || collision.gameObject.tag == "meteo")
+        if (collision.gameObject.tag == "enemy")
         {
             Destroy(gameObject);
         }
     }
-    */
 }

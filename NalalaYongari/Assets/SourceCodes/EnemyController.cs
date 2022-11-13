@@ -15,9 +15,39 @@ public class EnemyController : MonoBehaviour
     {
         transform.Translate(0, 0.1f, 0);
 
+<<<<<<< HEAD:NalalaYongari/Assets/SourceCodes/EnemyController.cs
         if (transform.position.y < -1.0f)
+=======
+    }
+
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "project" || collision.gameObject.tag == "meteo") // À÷³×µå·¡°ïÀº bulletÀÌ¶û ºÎµúÈ÷¸é ¾ø¾îÁü
+
+>>>>>>> 253d4ef4 (ê°œìš” : ì¶©ëŒ íŒì • colliderë¥¼ triggerì„ ì‚¬ìš©í•¨):NalalaYongari/Assets/Damaged.cs
         {
             Destroy(gameObject);
         }
     }
+    private void OnTriggerExit(Collider collision)
+    {
+
+    }
+    private void OnTriggerStay(Collider collision)
+    {
+
+    }
+
+
+    /* collisionÀ¸·Î Ã³¸®ÇßÀ» ¶§ 
+   private void OnCollisionEnter(Collision collision)
+   {
+       if (collision.gameObject.tag == "project" || collision.gameObject.tag == "meteo") // À÷³×µå·¡°ïÀº bulletÀÌ¶û ºÎµúÈ÷¸é ¾ø¾îÁü
+
+       {
+           Destroy(gameObject);
+       }
+   }
+    */
 }

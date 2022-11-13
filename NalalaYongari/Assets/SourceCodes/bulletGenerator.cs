@@ -6,7 +6,11 @@ using System.Threading;
 public class bulletGenerator : MonoBehaviour
 {
     float delta = 0f;
+<<<<<<< HEAD:NalalaYongari/Assets/SourceCodes/bulletGenerator.cs
     float span = 0.10f;
+=======
+    float span = 1.0f; // 0.3
+>>>>>>> origin/yunjin:NalalaYongari/Assets/bulletGenerator.cs
 
     public GameObject bulletPrefab;
     //float speed = 3.0f;

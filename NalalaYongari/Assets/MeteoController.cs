@@ -2,29 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+public class MeteoController : MonoBehaviour
 {
 
-    Transform bullet;
-    float speed = 0.23f;
+    GameObject weDragon;
+
     // Start is called before the first frame update
     void Start()
     {
-        bullet = transform;
-  
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        //GetComponent<Rigidbody>().isKinetic = false;
-        bullet.Translate(new Vector3(0, speed, 0));
+        transform.Translate(0, -0.1f, 0); // 프레임마다 등속으로 낙하
 
-        if (transform.position.y > 15.0f)
+        // 화면 밖으로 나오면 운석 소멸
+        if (transform.position.y < -1.0f)
         {
             Destroy(gameObject);
         }
     }
-
-    
 }

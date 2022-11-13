@@ -6,7 +6,11 @@ TagManager:
   tags:
   - enemy
   - project
+<<<<<<< HEAD
   - bullet
+=======
+  - Coin
+>>>>>>> origin/soobin
   layers:
   - Default
   - TransparentFX

@@ -15,11 +15,19 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 43.2
     width: 1536
     height: 780.8
   m_ShowMode: 4
   m_Title: Game
+=======
+    y: 43
+    width: 1920
+    height: 989
+  m_ShowMode: 4
+  m_Title: Console
+>>>>>>> origin/soobin
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,12 +51,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1536
     height: 730.8
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 21
+=======
+    width: 1920
+    height: 939
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 78
+>>>>>>> origin/soobin
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,12 +81,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1183.2
     y: 0
     width: 352.80005
     height: 730.8
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    x: 1336
+    y: 0
+    width: 584
+    height: 939
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> origin/soobin
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -92,8 +118,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 290.4
     height: 435.2
+=======
+    width: 316
+    height: 560
+>>>>>>> origin/soobin
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -111,23 +142,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 435.2
     width: 1183.2
     height: 295.59998
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
+=======
+    y: 560
+    width: 1336
+    height: 379
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> origin/soobin
   m_Panes:
   - {fileID: 12}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,8 +188,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1536
     height: 780.8
+=======
+    width: 1920
+    height: 989
+>>>>>>> origin/soobin
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -194,8 +239,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 760.8
     width: 1536
+=======
+    y: 969
+    width: 1920
+>>>>>>> origin/soobin
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -218,12 +268,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1183.2
     height: 730.8
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
   controlID: 48
+=======
+    width: 1336
+    height: 939
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 17
+>>>>>>> origin/soobin
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,12 +302,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1183.2
     height: 435.2
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 49
+=======
+    width: 1336
+    height: 560
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 69
+>>>>>>> origin/soobin
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,10 +332,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 290.4
     y: 0
     width: 892.7999
     height: 435.2
+=======
+    x: 316
+    y: 0
+    width: 1020
+    height: 560
+>>>>>>> origin/soobin
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -297,9 +372,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 508.80002
     width: 1182.2
     height: 274.59998
+=======
+    y: 633
+    width: 1335
+    height: 358
+>>>>>>> origin/soobin
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -317,22 +398,32 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/scripts
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\unity\Unity_DragonFlight\NalalaYongari
+=======
+  m_LastProjectPath: C:\Users\canny\Documents\Unity_DragonFlight\NalalaYongari
+>>>>>>> origin/soobin
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 485b0000
     m_LastClickedID: 23368
     m_ExpandedIDs: 00000000485b000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: f25a0000
+    m_LastClickedID: 23282
+    m_ExpandedIDs: 00000000e65a000000ca9a3bffffff7f
+>>>>>>> origin/soobin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +451,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000485b0000
+=======
+    m_ExpandedIDs: 00000000e65a0000
+>>>>>>> origin/soobin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -436,10 +531,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1183.2001
     y: 73.6
     width: 351.80005
     height: 709.8
+=======
+    x: 1336
+    y: 73
+    width: 583
+    height: 918
+>>>>>>> origin/soobin
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -478,9 +580,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 73.6
     width: 289.4
     height: 414.2
+=======
+    y: 73
+    width: 315
+    height: 539
+>>>>>>> origin/soobin
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -488,9 +596,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: dafaffff
+=======
+      m_SelectedIDs: fef2ffff
+      m_LastClickedID: -3330
+      m_ExpandedIDs: ecf2ffff32fbffff
+>>>>>>> origin/soobin
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -534,10 +648,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 290.4
     y: 73.6
     width: 890.7999
     height: 414.2
+=======
+    x: 316
+    y: 73
+    width: 1018
+    height: 539
+>>>>>>> origin/soobin
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -739,9 +860,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 10, z: 0}
     speed: 2
     m_Value: {x: 0, y: 10, z: 0}
+=======
+    m_Target: {x: 97.96356, y: 242.95602, z: 185.99733}
+    speed: 2
+    m_Value: {x: 97.96356, y: 242.95602, z: 185.99733}
+>>>>>>> origin/soobin
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,6 +915,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.010808273, y: 0.01109609, z: -0.00012311996, w: -0.9998952}
     speed: 2
     m_Value: {x: -0.010808109, y: 0.011095922, z: -0.0001231181, w: -0.9998801}
@@ -795,6 +923,15 @@ MonoBehaviour:
     m_Target: 1.7379282
     speed: 2
     m_Value: 1.6630892
+=======
+    m_Target: {x: -0.18956561, y: -0.03033847, z: 0.0058580525, w: -0.98139745}
+    speed: 2
+    m_Value: {x: -0.1895627, y: -0.030338004, z: 0.0058579626, w: -0.98138237}
+  m_Size:
+    m_Target: 530.6433
+    speed: 2
+    m_Value: 530.6433
+>>>>>>> origin/soobin
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -839,10 +976,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 290.4
     y: 73.6
     width: 890.7999
     height: 414.2
+=======
+    x: 316
+    y: 73
+    width: 1018
+    height: 539
+>>>>>>> origin/soobin
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -853,7 +997,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1440, y: 2960}
+=======
+  m_TargetSize: {x: 291, y: 518}
+>>>>>>> origin/soobin
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -862,16 +1010,23 @@ MonoBehaviour:
   m_VSyncEnabled: 1
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 0700000000000000000000000b000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0100000000000000000000000d000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -576
     m_HBaseRangeMax: 576
     m_VBaseRangeMin: -1184
     m_VBaseRangeMax: 1184
+=======
+    m_HBaseRangeMin: -145.5
+    m_HBaseRangeMax: 145.5
+    m_VBaseRangeMin: -259
+    m_VBaseRangeMax: 259
+>>>>>>> origin/soobin
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -889,16 +1044,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 890.7999
       height: 393.2
     m_Scale: {x: 0.1660473, y: 0.1660473}
     m_Translation: {x: 445.39996, y: 196.6}
+=======
+      width: 1018
+      height: 518
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 509, y: 259}
+>>>>>>> origin/soobin
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -2682.368
       y: -1184
       width: 5364.736
@@ -906,6 +1069,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.1660473
   m_LastWindowPixelSize: {x: 1113.4999, y: 517.75}
+=======
+      x: -509
+      y: -259
+      width: 1018
+      height: 518
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1018, y: 539}
+>>>>>>> origin/soobin
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -932,9 +1104,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 661
-    width: 1478
-    height: 378
+    y: 633
+    width: 1335
+    height: 358
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

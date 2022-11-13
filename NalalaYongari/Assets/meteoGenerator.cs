@@ -13,7 +13,7 @@ public class meteoGenerator : MonoBehaviour
     {
         
     }
-
+ 
     // Update is called once per frame
     void Update()
     {
@@ -24,10 +24,7 @@ public class meteoGenerator : MonoBehaviour
             this.delta = 0;
 
             GameObject meteo = Instantiate(meteoPrefab);
-
-            //int px = Random.Range(-2, 2);
-            meteo.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 
-                GameObject.Find("warnline").transform.position.y, 8);
+            meteo.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 27.0f, 8.9f);
         }
     }
 }

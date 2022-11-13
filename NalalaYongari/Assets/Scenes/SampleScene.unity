@@ -669,6 +669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1507985019}
+  - component: {fileID: 1507985020}
   m_Layer: 0
   m_Name: meteoGenerator
   m_TagString: meteo
@@ -691,6 +692,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507985020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507985017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb59276d3b96bd247a3998ca2c5c44c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteoPrefab: {fileID: 2588990553603909195, guid: 1ff8cacd61094424abed792ae4605f07, type: 3}
 --- !u!1 &1558391133
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +813,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1659067562}
   - component: {fileID: 1659067563}
-  - component: {fileID: 1659067564}
   m_Layer: 0
   m_Name: warnlineGenerator
   m_TagString: Untagged
@@ -835,19 +848,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warnlinePrefab: {fileID: 8110637758879416096, guid: 156faf1337778994ea070413da450836, type: 3}
---- !u!114 &1659067564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659067560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb59276d3b96bd247a3998ca2c5c44c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meteoPrefab: {fileID: 2588990553603909195, guid: 1ff8cacd61094424abed792ae4605f07, type: 3}
 --- !u!1 &1719656738
 GameObject:
   m_ObjectHideFlags: 0

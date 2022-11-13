@@ -15,11 +15,6 @@ GameObject:
   - component: {fileID: 5304769542318541423}
   - component: {fileID: -6714816755905989144}
   - component: {fileID: -516781965718281972}
-<<<<<<< HEAD:NalalaYongari/Assets/Prefabs/bulletPrefab.prefab
-=======
-  - component: {fileID: -8216485636383008111}
-  - component: {fileID: -4233332835555356243}
->>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함):NalalaYongari/Assets/bulletPrefab.prefab
   m_Layer: 0
   m_Name: bulletPrefab
   m_TagString: bullet
@@ -100,7 +95,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5304769542318541422}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -145,31 +140,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65008b602a8e33458a56ddc918c043a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:NalalaYongari/Assets/Prefabs/bulletPrefab.prefab
-=======
---- !u!114 &-8216485636383008111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5304769542318541422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f8b2b4025d974c48bdcf8752e54cc79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &-4233332835555356243
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5304769542318541422}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
->>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함):NalalaYongari/Assets/bulletPrefab.prefab

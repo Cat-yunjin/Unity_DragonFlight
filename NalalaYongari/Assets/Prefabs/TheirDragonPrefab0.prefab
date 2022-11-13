@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8224905884714800989}
   - component: {fileID: 8089895178130022102}
   m_Layer: 0
-  m_Name: TheirDragonPrefab
+  m_Name: TheirDragonPrefab0
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5795695153423866028}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -0.07301536, y: 9.659229, z: 8}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}

@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damaged: MonoBehaviour
+public class Damaged : MonoBehaviour
 {
+    public GameObject pro1Prefab;
+    public GameObject pro2Prefab;
     public GameObject itemPrefab;
     // Start is called before the first frame update
     void Start()
@@ -17,17 +19,28 @@ public class Damaged: MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "bullet")
         {
             int point = Random.Range(0, 100);
-            if (point <= 50)
+            if (point % 10 == 1)
+            {
+                GameObject drop_item = Instantiate(pro1Prefab);
+                drop_item.transform.position = this.transform.position;
+            }
+            if (point % 20 == 1)
+            {
+                GameObject drop_item = Instantiate(pro2Prefab);
+                drop_item.transform.position = this.transform.position;
+            }
+            if(point >= 50)
             {
                 GameObject drop_item = Instantiate(itemPrefab);
                 drop_item.transform.position = this.transform.position;
             }
-            Destroy(this.gameObject);
+           Destroy(this.gameObject);
         }
+
     }
 }

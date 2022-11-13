@@ -124,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3e18695a4f9e4e9ca1c28a9bcbcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pro1Prefab: {fileID: 6640241225232107473, guid: c398d4638f97e3d44b15307241fbc782, type: 3}
+  pro2Prefab: {fileID: 6640241225232107473, guid: 08a6adf001f49684bb04b9eb8f1a0a0e, type: 3}
   itemPrefab: {fileID: 6640241225232107473, guid: 413355e5cc5e4de48a81902edbec7159, type: 3}
 --- !u!54 &8089895178130022102
 Rigidbody:

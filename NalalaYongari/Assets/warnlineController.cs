@@ -6,7 +6,7 @@ public class warnlineController : MonoBehaviour
 {
     Vector3 weDragonPos;
     Transform warnline;
-    float speed = 0.5f;
+    //float speed = 0.5f;
    // public GameObject meteoPrefab;
    // GameObject meteo;
     Vector3 point;

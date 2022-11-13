@@ -8,6 +8,7 @@ public class meteoGenerator : MonoBehaviour
     public GameObject meteoPrefab;
     float span = 8.0f; // 경고선이 8초마다 생김, 생길 때 위에 생기게 함
     float delta = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class meteoGenerator : MonoBehaviour
             this.delta = 0;
 
             GameObject meteo = Instantiate(meteoPrefab);
-            meteo.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 27.0f, 8.9f);
+            meteo.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 27.0f, 8.0f);
         }
     }
 }

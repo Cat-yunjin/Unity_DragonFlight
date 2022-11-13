@@ -29,6 +29,8 @@ public class warnlineGenerator : MonoBehaviour
             // warnline이 2초 정도 지속하다가 삭제하고 마지막 위치 기억 fail
             // 마지막 위치에 운석 generator 설치
             // 거기 위에서 운석이 떨어짐
+
+
                 
             warnline.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 10.0f, 8.9f);
 

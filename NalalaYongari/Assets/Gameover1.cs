@@ -16,6 +16,29 @@ public class Gameover1 : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+            Debug.Log("Game Over");
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit(); // 어플리케이션 종료
+            #endif
+        }
+    }
+    private void OnTriggerExit(Collider collision)
+    {
+
+    }
+    private void OnTriggerStay(Collider collision)
+    {
+
+    }
+
+    /*
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "enemy")
@@ -29,5 +52,6 @@ public class Gameover1 : MonoBehaviour
             #endif
         }
     }
+    */
 
 }

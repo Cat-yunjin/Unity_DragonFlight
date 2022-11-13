@@ -10,7 +10,11 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-1:
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 5357560500050a09080c597b42730c44411540297a7070647d2b1c37b5e3366a
+=======
+      value: 5205005504060f095b5e0d2141765a44124e4a7c757870327b7c4466e6b13139
+>>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함)
 =======
       value: 5205005504060f095b5e0d2141765a44124e4a7c757870327b7c4466e6b13139
 >>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함)

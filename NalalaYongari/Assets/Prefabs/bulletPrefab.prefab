@@ -19,6 +19,9 @@ GameObject:
 =======
   - component: {fileID: -8216485636383008111}
   - component: {fileID: -4233332835555356243}
+<<<<<<< HEAD:NalalaYongari/Assets/Prefabs/bulletPrefab.prefab
+>>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함):NalalaYongari/Assets/bulletPrefab.prefab
+=======
 >>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함):NalalaYongari/Assets/bulletPrefab.prefab
   m_Layer: 0
   m_Name: bulletPrefab
@@ -172,4 +175,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:NalalaYongari/Assets/Prefabs/bulletPrefab.prefab
+>>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함):NalalaYongari/Assets/bulletPrefab.prefab
+=======
 >>>>>>> 253d4ef4 (개요 : 충돌 판정 collider를 trigger을 사용함):NalalaYongari/Assets/bulletPrefab.prefab

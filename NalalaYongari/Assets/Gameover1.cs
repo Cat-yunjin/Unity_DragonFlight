@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Gameover1 : MonoBehaviour
 {
+    static int pro_time = 0;
+    static bool pro_bool = true;
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(pro_red());
     }
 
     // Update is called once per frame
@@ -16,18 +18,47 @@ public class Gameover1 : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "enemy")
-        {
-            Destroy(gameObject);
-            Debug.Log("Game Over");
-            #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-            #else
-                Application.Quit(); // 어플리케이션 종료
-            #endif
+    IEnumerator pro_red(){
+        if(pro_time > 0){
+            pro_time --;
+            if(pro_time <0) {
+                pro_time = 0;
+            }
         }
+        yield return new WaitForSecondsRealtime(1.0f); 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "pro1")
+        {
+            pro_time += 3;
+        }
+        if (collision.gameObject.tag == "pro2")
+        {
+            pro_bool = true;
+        }
+        if (collision.gameObject.tag == "enemy")
+        {
+            if(pro_time > 0){
+                Debug.Log("N-sec protect");
+            }
+
+            else if(pro_bool == true){
+                pro_bool = false;
+                Debug.Log("1-time protect");
+                Destroy(collision.gameObject);
+            }
+            else{
+                Destroy(gameObject);
+                Debug.Log("Game Over");
+                #if UNITY_EDITOR
+                    UnityEditor.EditorApplication.isPlaying = false;
+                #else
+                    Application.Quit(); 
+                #endif
+            }
+            
+        }
+    }
 }

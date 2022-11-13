@@ -5,7 +5,7 @@ using UnityEngine;
 public class itemController : MonoBehaviour
 {
     Rigidbody rb;
-    float power = 30f;
+    //float power = 30f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,7 @@ public class itemController : MonoBehaviour
     {
         if (other.gameObject.name == "weDragon")
         {
-            //È¿°ú ¹ßµ¿
+            //È¿ï¿½ï¿½ ï¿½ßµï¿½
             Destroy(gameObject);
         }
     }

@@ -2,21 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+//using TMPro;
 
 public class weDragonMove : MonoBehaviour
 {
     Vector3 clickPoint; //∏∂øÏΩ∫∏¶ ≈¨∏Ø«— ¿ßƒ°
     float Speed = 0.5f; //øÚ¡˜¿Ã¥¬ º”µµ
 
-    private TextMeshProUGUI myCoin;
+    //private TextMeshProUGUI myCoin;
     public int get_coin = 0; //«— ∞‘¿” µµ¡ﬂ æÚ¿∫ ƒ⁄¿Œ ∞™
     public int one_coin = 100; //ƒ⁄¿Œ 1∞≥¥Á 100ø¯
 
     void Start()
     {
+<<<<<<< HEAD:Nalala2/Assets/SourceCodes/weDragonMove.cs
         myCoin = GameObject.Find("coin").GetComponent<TextMeshProUGUI>();
         myCoin.text = "[Get Coin]: " + get_coin.ToString();
+=======
+        //myCoin = GameObject.Find("coin").GetComponent<TextMeshProUGUI>();
+        //myCoin.text = "[Get Coin]: " + get_coin.ToString();
+>>>>>>> 26656c70 (.gitattributes ÎÑ£Í≥† Ïû¨ÎèÑÏ†Ñ):NalalaYongari/Assets/SourceCodes/weDragonMove.cs
         gameObject.transform.position = new Vector3(0, 7, 8);
     }
 
@@ -37,27 +42,27 @@ public class weDragonMove : MonoBehaviour
     private void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.tag == "Coin")
-        {
-            get_coin += one_coin;
-            Debug.Log(get_coin);
-        }
+        //if (col.gameObject.tag == "Coin")
+        //{
+        //    get_coin += one_coin;
+        //    Debug.Log(get_coin);
+        //}
 
-        if (col.gameObject.tag == "gem")
-        {
-            get_coin += one_coin * 10;
-            Debug.Log(get_coin);
-        }
+        //if (col.gameObject.tag == "gem")
+        //{
+        //    get_coin += one_coin * 10;
+        //    Debug.Log(get_coin);
+        //}
 
     }
 
-    void SetCountText()
-    {
-        myCoin.text = "[Get Coin]: " + get_coin.ToString();
-    }
+    //void SetCountText()
+    //{
+    //    myCoin.text = "[Get Coin]: " + get_coin.ToString();
+    //}
 
-    void Update()
-    {
-        SetCountText();
-    }
+    //void Update()
+    //{
+    //    SetCountText();
+    //}
 }

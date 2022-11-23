@@ -10,7 +10,10 @@ public class BulletController : MonoBehaviour
     void Start()
     {
         bullet = transform;
+<<<<<<< HEAD:Nalala2/Assets/SourceCodes/BulletController.cs
         
+=======
+>>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/SourceCodes/BulletController.cs
     }
     
     // Update is called once per frame

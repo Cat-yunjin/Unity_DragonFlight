@@ -319,6 +319,11 @@ GameObject:
   - component: {fileID: 398398340}
   - component: {fileID: 398398341}
   - component: {fileID: 398398342}
+<<<<<<< HEAD:Nalala2/Assets/Scenes/BattleScene.unity
+=======
+  - component: {fileID: 398398343}
+  - component: {fileID: 398398344}
+>>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/Scenes/BattleScene.unity
   m_Layer: 0
   m_Name: weDragon
   m_TagString: Untagged
@@ -446,6 +451,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d288c580ebf274468392955ea6cd38e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Nalala2/Assets/Scenes/BattleScene.unity
+=======
+  pro_time: 0
+--- !u!114 &398398343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398398335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a66d372e1db234193100a2460675ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  get_coin: 0
+--- !u!114 &398398344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398398335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85da08cd645fd2b4dbe95076cb7e90e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+>>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/Scenes/BattleScene.unity
 --- !u!1 &436863452
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +817,121 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1311325707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311325712}
+  - component: {fileID: 1311325711}
+  - component: {fileID: 1311325710}
+  - component: {fileID: 1311325709}
+  - component: {fileID: 1311325708}
+  m_Layer: 0
+  m_Name: Heart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1311325708
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311325707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1311325709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311325707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ad30f80a7f34b46b106936063a9b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: ad9c3abb0737fec4ca2b0df9c1de386d, type: 2}
+  - {fileID: 2100000, guid: 1f61be1d3c105ba4c804867b88ff0abb, type: 2}
+  - {fileID: 2100000, guid: 15b6097fd9c8fed46977d157c5dcc263, type: 2}
+--- !u!23 &1311325710
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311325707}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1311325711
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311325707}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1311325712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311325707}
+  m_LocalRotation: {x: -0.0051099183, y: 0.7070883, z: -0.7070884, w: 0.0051098047}
+  m_LocalPosition: {x: 1, y: 6.7, z: 7}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 450.828, y: -90.00101, z: 89.999}
 --- !u!1 &1558391133
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +1122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5795695153423866028, guid: 5766ef8186599b84983187c55714a389, type: 3}
+<<<<<<< HEAD:Nalala2/Assets/Scenes/BattleScene.unity
   BossPrefab: {fileID: 5795695153423866028, guid: d05be190bc1986841baa98d2eec51f21, type: 3}
+=======
+>>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/Scenes/BattleScene.unity
 --- !u!1 &1863869374
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
 
-public class bulletGenerator : MonoBehaviour
+public class BulletGenerator : MonoBehaviour
 {
     float delta = 0f;
     float span = 0.10f;
+    public int damage = 50;
 
     public GameObject bulletPrefab;
     //float speed = 3.0f;

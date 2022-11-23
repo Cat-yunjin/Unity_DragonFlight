@@ -9,23 +9,27 @@ public class WarnlineController : MonoBehaviour
     //float speed = 0.5f;
     // public GameObject meteoPrefab;
     // GameObject meteo;
-    Vector3 point;
-
+    float point;
+    public GameObject meteorPrefab;
+    float delta = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        warnline = transform;
-        point = GameObject.Find("weDragon").transform.position;
-        //GameObject meteo = Instantiate(meteoPrefab);
-        Destroy(gameObject, 2f);
+        point = GameObject.Find("weDragon").transform.position.x;
 
-
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        delta += Time.deltaTime;
+        if(this.delta >= 2f){
+            Destroy(gameObject);
+            GameObject meteor = Instantiate(meteorPrefab);
+            meteor.transform.position = new Vector3(point, 15.0f, 8.0f);
+        }
         // warnline은 x축으로만 평행하게 움직임
         // generator에서 받아온 wedragon의 최종 위치에서 운석을 생성
 

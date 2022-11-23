@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class MeteorController : MonoBehaviour
 {
-
-    GameObject weDragon;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +12,10 @@ public class MeteorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, -0.1f, 0); // 프레임마다 등속으로 낙하
 
         // 화면 밖으로 나오면 운석 소멸
+
+        transform.Translate(0, -0.15f, 0); // 프레임마다 등속으로 낙하
         if (transform.position.y < -1.0f)
         {
             Destroy(gameObject);

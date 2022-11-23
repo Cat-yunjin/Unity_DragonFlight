@@ -5,9 +5,10 @@ using UnityEngine;
 public class WarnlineGenerator : MonoBehaviour
 {
     float delta = 0f;
-    float span = 8.0f; // 8초마다 warnline 생성
+    float span = 3.0f; // 8초마다 warnline 생성
 
     public GameObject warnlinePrefab;
+    public GameObject meteorPrefab;
     public GameObject warnmarkPrefab;
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,11 @@ public class WarnlineGenerator : MonoBehaviour
         if (this.delta > this.span)
         {
             this.delta = 0;
+            float we_dragon_loc = GameObject.Find("weDragon").transform.position.x;
 
             GameObject warnline = Instantiate(warnlinePrefab);
+            warnline.transform.position = new Vector3(we_dragon_loc, 10.0f, 8.9f);
+
             //GameObject warnmark = Instantiate(warnmarkPrefab);
 
             // plane의 살짝 위에 warnline 생성 ok
@@ -31,7 +35,6 @@ public class WarnlineGenerator : MonoBehaviour
             // 마지막 위치에 운석 generator 설치
             // 거기 위에서 운석이 떨어짐
 
-            warnline.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 10.0f, 8.9f);
             //warnmark.transform.position = new Vector3(GameObject.Find("weDragon").transform.position.x, 10.0f, 8.9f);
 
         }

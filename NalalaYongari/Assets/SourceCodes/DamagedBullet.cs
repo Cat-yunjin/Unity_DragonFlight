@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damaged1 : MonoBehaviour
+public class DamagedBullet : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class Damaged1 : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision) // 충돌하는 순간 작동
     {
-        if (collision.gameObject.tag == "enemy" || collision.gameObject.tag == "meteo")
+        if (collision.gameObject.tag == "enemy" )
         {
             Destroy(gameObject);
         }

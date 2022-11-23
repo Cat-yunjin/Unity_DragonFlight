@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7938460295104162777}
   m_Layer: 0
   m_Name: meteorPrefab
-  m_TagString: meteo
+  m_TagString: meteor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

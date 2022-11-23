@@ -111,3 +111,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddaf9061e9a83b4ca3e3deca1377670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meteorPrefab: {fileID: 2588990553603909195, guid: 60676044daa4dc949a3e142816bab1d5, type: 3}

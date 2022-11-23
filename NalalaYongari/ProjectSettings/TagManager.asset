@@ -7,6 +7,13 @@ TagManager:
   - enemy
   - project
   - bullet
+  - meteo
+  - Coin
+  - pro1
+  - pro2
+  - meteor
+  - item
+  - attack
   layers:
   - Default
   - TransparentFX

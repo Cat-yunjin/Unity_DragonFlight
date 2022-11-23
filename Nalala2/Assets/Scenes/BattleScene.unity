@@ -318,12 +318,9 @@ GameObject:
   - component: {fileID: 398398336}
   - component: {fileID: 398398340}
   - component: {fileID: 398398341}
-  - component: {fileID: 398398342}
-<<<<<<< HEAD:Nalala2/Assets/Scenes/BattleScene.unity
-=======
-  - component: {fileID: 398398343}
   - component: {fileID: 398398344}
->>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/Scenes/BattleScene.unity
+  - component: {fileID: 398398342}
+  - component: {fileID: 398398343}
   m_Layer: 0
   m_Name: weDragon
   m_TagString: Untagged
@@ -451,8 +448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d288c580ebf274468392955ea6cd38e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Nalala2/Assets/Scenes/BattleScene.unity
-=======
   pro_time: 0
 --- !u!114 &398398343
 MonoBehaviour:
@@ -476,11 +471,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 398398335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85da08cd645fd2b4dbe95076cb7e90e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 28dfc808a2a6d31409cf0e228e6720d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
->>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/Scenes/BattleScene.unity
 --- !u!1 &436863452
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +854,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1311325707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ad30f80a7f34b46b106936063a9b9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7291309f9c91ec54c8206ce3c7f07dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   materials:
@@ -925,8 +919,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311325707}
   m_LocalRotation: {x: -0.0051099183, y: 0.7070883, z: -0.7070884, w: 0.0051098047}
-  m_LocalPosition: {x: 1, y: 6.7, z: 7}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 1.25, y: 6.7, z: 7}
+  m_LocalScale: {x: 0.08, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1122,10 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5795695153423866028, guid: 5766ef8186599b84983187c55714a389, type: 3}
-<<<<<<< HEAD:Nalala2/Assets/Scenes/BattleScene.unity
   BossPrefab: {fileID: 5795695153423866028, guid: d05be190bc1986841baa98d2eec51f21, type: 3}
-=======
->>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/Scenes/BattleScene.unity
 --- !u!1 &1863869374
 GameObject:
   m_ObjectHideFlags: 0

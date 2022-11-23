@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item_code: 0
   materials:
-  - {fileID: 2100000, guid: a5d7b587dd9b4b446b48254194191e60, type: 2}
+  - {fileID: 2100000, guid: 2435981fa9332a048ab2d82c05c96cb4, type: 2}
   - {fileID: 2100000, guid: fae8cc751f8527745a4b04d8f8504fe1, type: 2}
   - {fileID: 2100000, guid: 31fac7a07106b5a4293b4c8c9b1287fa, type: 2}
 --- !u!135 &1640011595095276244

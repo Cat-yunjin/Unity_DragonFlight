@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 using UnityEngine.SceneManagement; // ÇÊ¿ä
 
 public class Gameover1 : MonoBehaviour
 {
-    static int pro_time = 0;
-    static bool pro_bool = true;
+    public int pro_time = 0;
+    static bool pro_bool = false;
 
     public static float overtime = 0f;
-
+    float sec_count = 0f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,15 @@ public class Gameover1 : MonoBehaviour
     void Update()
     {
         overtime += Time.deltaTime;
+        if (pro_time > 0)
+        {
+            sec_count += Time.deltaTime;
+            if (sec_count >= 1)
+            {
+                sec_count = 0f;
+                pro_time--;
+            }
+        }
     }
 
     IEnumerator pro_red()
@@ -40,15 +51,15 @@ public class Gameover1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "item")
         {
-            if (collision.gameObject.GetComponent<itemController>().item_code == 1)
+            if (collision.gameObject.GetComponent<ItemController>().item_code == 1)
             {
                 pro_time += 3;
-                Debug.Log("get item1");
+                Debug.Log("get item1(3-sec pro) ");
             }
-            if (collision.gameObject.GetComponent<itemController>().item_code == 2)
+            if (collision.gameObject.GetComponent<ItemController>().item_code == 2)
             {
                 pro_bool = true;
-                Debug.Log("get item2");
+                Debug.Log("get item2(1 time pro)");
             }
         }
         if(collision.gameObject.tag=="enemy" || collision.gameObject.tag == "meteor")
@@ -62,17 +73,19 @@ public class Gameover1 : MonoBehaviour
                 pro_bool = false;
                 Debug.Log("1-time protect");
                 Destroy(collision.gameObject);
-                pro_time += 1;
+                //pro_time += 1;
             }
             else
             {
                 Destroy(gameObject);
                 Debug.Log("Game Over");
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
-                Application.Quit();
-#endif
+
+                SceneManager.LoadScene("GameOverScene");
+//#if UNITY_EDITOR
+//                UnityEditor.EditorApplication.isPlaying = false;
+//#else
+//                Application.Quit();
+//#endif
             }
         }
 //        if (collision.gameObject.tag == "pro1")

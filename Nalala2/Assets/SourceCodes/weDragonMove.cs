@@ -15,13 +15,8 @@ public class weDragonMove : MonoBehaviour
 
     void Start()
     {
-<<<<<<< HEAD:Nalala2/Assets/SourceCodes/weDragonMove.cs
-        myCoin = GameObject.Find("coin").GetComponent<TextMeshProUGUI>();
-        myCoin.text = "[Get Coin]: " + get_coin.ToString();
-=======
         //myCoin = GameObject.Find("coin").GetComponent<TextMeshProUGUI>();
         //myCoin.text = "[Get Coin]: " + get_coin.ToString();
->>>>>>> 26656c70 (.gitattributes 넣고 재도전):NalalaYongari/Assets/SourceCodes/weDragonMove.cs
         gameObject.transform.position = new Vector3(0, 7, 8);
     }
 

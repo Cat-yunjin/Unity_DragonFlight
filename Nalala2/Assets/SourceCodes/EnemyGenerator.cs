@@ -70,7 +70,7 @@ public class EnemyGenerator : MonoBehaviour
             this.boss_span = 20f;
             GameObject boss;
             boss = Instantiate(BossPrefab);
-            boss.transform.position = new Vector3(0, 15, 8);
+            boss.transform.position = new Vector3(0, 13, 8);
         }
     }
 }

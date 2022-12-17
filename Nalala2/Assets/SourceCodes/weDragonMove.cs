@@ -6,58 +6,53 @@ using UnityEngine.UI;
 
 public class weDragonMove : MonoBehaviour
 {
-    Vector3 clickPoint; //¸¶¿ì½º¸¦ Å¬¸¯ÇÑ À§Ä¡
-    float Speed = 0.5f; //¿òÁ÷ÀÌ´Â ¼Óµµ
-
+    Vector3 clickPoint; //ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
+    float computer_speed = 0.5f; //ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½Óµï¿½
+    private float Speed = 0.2f;
+    private Vector2 nowPos, prePos;
+    private Vector3 movePos;
     //private TextMeshProUGUI myCoin;
-    public int get_coin = 0; //ÇÑ °ÔÀÓ µµÁß ¾òÀº ÄÚÀÎ °ª
-    public int one_coin = 100; //ÄÚÀÎ 1°³´ç 100¿ø
+    public int get_coin = 0; //ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+    public int one_coin = 100; //ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ 100ï¿½ï¿½
 
     void Start()
     {
         //myCoin = GameObject.Find("coin").GetComponent<TextMeshProUGUI>();
         //myCoin.text = "[Get Coin]: " + get_coin.ToString();
-        gameObject.transform.position = new Vector3(0, 7, 8);
+        gameObject.transform.position = new Vector3(0, 7.5f, 8);
     }
 
-    void OnMouseDown()
-    {
-        clickPoint = Input.mousePosition;
-    }
-
-    void OnMouseDrag()
-    {
-        Vector3 differ = Input.mousePosition - clickPoint; //Ã³À½¿¡ Å¬¸¯ÇÑ À§Ä¡¿Í µå·¡±×ÇÑ À§Ä¡ÀÇ Â÷ÀÌ
-        Vector3 pos = transform.position; //ÇØ´çÀ§Ä¡·Î ÀÌµ¿
-        pos.x += differ.x * Time.deltaTime * Speed; //ÀÌµ¿°Å¸® º¸Á¤ÇÏ±â (°Å¸®=¼Ó·Â*½Ã°£ ´À³¦...)
-        transform.position = pos; //transform.position¿¡ À§Ä¡¸¦ ´ëÀÔÇÏ¸é ÇØ´ç À§Ä¡·Î ÀÌµ¿ÇÑ´Ù.
-        clickPoint = Input.mousePosition;
-    }
-
-    private void OnTriggerEnter(Collider col)
-    {
-
-        //if (col.gameObject.tag == "Coin")
-        //{
-        //    get_coin += one_coin;
-        //    Debug.Log(get_coin);
-        //}
-
-        //if (col.gameObject.tag == "gem")
-        //{
-        //    get_coin += one_coin * 10;
-        //    Debug.Log(get_coin);
-        //}
-
-    }
-
-    //void SetCountText()
+    //void OnMouseDown()
     //{
-    //    myCoin.text = "[Get Coin]: " + get_coin.ToString();
+    //    clickPoint = Input.mousePosition;
     //}
 
-    //void Update()
+    //void OnMouseDrag()
     //{
-    //    SetCountText();
+    //    Vector3 differ = Input.mousePosition - clickPoint; //Ã³ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½å·¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    //    Vector3 pos = transform.position; //ï¿½Ø´ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½
+    //    if ((gameObject.transform.position.x <= -2 && differ.x <= 0) || (gameObject.transform.position.x >= 2 && differ.x >= 0)) return;
+    //    pos.x += differ.x * Time.deltaTime * computer_speed; //ï¿½Ìµï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ (ï¿½Å¸ï¿½=ï¿½Ó·ï¿½*ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½...)
+    //    transform.position = pos; //transform.positionï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ñ´ï¿½.
+    //    clickPoint = Input.mousePosition;
     //}
+    void Update()
+    {
+        if (Input.touchCount == 1)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                prePos = touch.position - touch.deltaPosition;
+            }
+            else if (touch.phase == TouchPhase.Moved)
+            {
+                nowPos = touch.position - touch.deltaPosition;
+                movePos = (Vector3)(prePos - nowPos) * Time.deltaTime * Speed;
+                if ((gameObject.transform.position.x <= -2 && movePos.x <= 0) || (gameObject.transform.position.x >= 2 && movePos.x >= 0)) return;
+                gameObject.transform.Translate(-1*movePos.x, 0, 0);
+                prePos = touch.position - touch.deltaPosition;
+            }
+        }
+    }
 }
